@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         studentsRv = (RecyclerView) findViewById(R.id.students_recycler);
         studentsRv.setLayoutManager(new LinearLayoutManager(this));
 
-
         addButton = (FloatingActionButton) findViewById(R.id.add_student);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
