@@ -67,11 +67,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Query students = studentController.getStudents();
-        final FirebaseRecyclerAdapter<Student, StudentViewHolder> adapter = new FirebaseRecyclerAdapter<Student, StudentViewHolder>(Student.class, R.layout.item_student, StudentViewHolder.class, students) {
+        final FirebaseRecyclerAdapter<Student, StudentViewHolder> adapter = new FirebaseRecyclerAdapter<Student,
+                StudentViewHolder>(Student.class, R.layout.item_student, StudentViewHolder.class, students) {
 
             @Override
             protected void populateViewHolder(StudentViewHolder holder, Student student, int position) {
                 holder.studentNameTv.setText(student.getName());
+                holder.studentCourseTv.setText(student.getCourse());
+
             }
         };
         studentsRv.setAdapter(adapter);

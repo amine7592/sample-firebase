@@ -43,7 +43,7 @@ public class StudentController {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         // Get user value
-                        Student student = new Student(studentName);
+                        Student student = new Student(studentName,"VM Sviluppo");
                         Random generator = new Random();
                         int i = generator.nextInt(1000) + 1;
                         mDatabase.child("student" + i).setValue(student.toMap());
