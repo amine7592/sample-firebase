@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FirebaseSampleApplication</string>
+    <string name="email_hint">insert email</string>
+    <string name="pwd_hint">password</string>
+    <string name="login">Login</string>
+    <string name="signup">signup</string>
+    <string name="registration">Signup with new account</string>
+    <string name="auth_failed">Login or password ar incorrect</string>
+    <string name="logout">logout</string>
+    <string name="profile">profile</string>
+    <string name="insert_student_name">Insert student name</string>
+    <string name="done">done</string>
+    <string name="cancel">cancel</string>
+    <string name="add_student">add student</string>
+    <string name="student">Student</string>
+</resources>
